@@ -1,0 +1,488 @@
+2015-01-26 15:47:46+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 15:47:46+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 15:47:46+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'SPIDER_MODULES': ['douban.spiders'], 'LOG_FILE': 'test.log', 'BOT_NAME': 'douban'}
+2015-01-26 15:47:46+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 15:47:46+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 15:47:46+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 15:47:46+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 15:47:46+0800 [Test] INFO: Spider opened
+2015-01-26 15:47:46+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 15:47:46+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 15:47:46+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 15:47:47+0800 [Test] DEBUG: Redirecting (302) to <GET http://www.douban.com/group/explore> from <GET http://www.douban.com/group/>
+2015-01-26 15:47:47+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/explore> (referer: None)
+2015-01-26 15:47:47+0800 [Test] DEBUG: Fetch douban homepage page: http://www.douban.com/group/explore
+2015-01-26 15:47:47+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 15:47:47+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 472,
+	 'downloader/request_count': 2,
+	 'downloader/request_method_count/GET': 2,
+	 'downloader/response_bytes': 14861,
+	 'downloader/response_count': 2,
+	 'downloader/response_status_count/200': 1,
+	 'downloader/response_status_count/302': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 7, 47, 47, 207971),
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 7,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 2,
+	 'scheduler/dequeued/memory': 2,
+	 'scheduler/enqueued': 2,
+	 'scheduler/enqueued/memory': 2,
+	 'start_time': datetime.datetime(2015, 1, 26, 7, 47, 46, 876357)}
+2015-01-26 15:47:47+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 15:52:18+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 15:52:18+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 15:52:18+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'SPIDER_MODULES': ['douban.spiders'], 'LOG_FILE': 'test.log', 'BOT_NAME': 'douban'}
+2015-01-26 15:52:18+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 15:52:18+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 15:52:18+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 15:52:18+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 15:52:18+0800 [Test] INFO: Spider opened
+2015-01-26 15:52:18+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 15:52:18+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 15:52:18+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 15:52:18+0800 [Test] DEBUG: Redirecting (302) to <GET http://www.douban.com/group/explore> from <GET http://www.douban.com/group/>
+2015-01-26 15:52:19+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/explore> (referer: None)
+2015-01-26 15:52:19+0800 [Test] DEBUG: Fetch douban homepage page: http://www.douban.com/group/explore
+2015-01-26 15:52:19+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 15:52:19+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 472,
+	 'downloader/request_count': 2,
+	 'downloader/request_method_count/GET': 2,
+	 'downloader/response_bytes': 14887,
+	 'downloader/response_count': 2,
+	 'downloader/response_status_count/200': 1,
+	 'downloader/response_status_count/302': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 7, 52, 19, 599170),
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 7,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 2,
+	 'scheduler/dequeued/memory': 2,
+	 'scheduler/enqueued': 2,
+	 'scheduler/enqueued/memory': 2,
+	 'start_time': datetime.datetime(2015, 1, 26, 7, 52, 18, 493514)}
+2015-01-26 15:52:19+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:04:03+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:04:03+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:04:03+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'SPIDER_MODULES': ['douban.spiders'], 'LOG_FILE': 'test.log', 'BOT_NAME': 'douban'}
+2015-01-26 16:04:03+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:04:03+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:04:03+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:04:03+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:04:03+0800 [Test] INFO: Spider opened
+2015-01-26 16:04:03+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:04:03+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:04:03+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:04:03+0800 [Test] DEBUG: Redirecting (302) to <GET http://www.douban.com/group/explore> from <GET http://www.douban.com/group/>
+2015-01-26 16:04:03+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/explore> (referer: None)
+2015-01-26 16:04:03+0800 [Test] DEBUG: Fetch douban homepage page: http://www.douban.com/group/explore
+2015-01-26 16:04:03+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:04:03+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 472,
+	 'downloader/request_count': 2,
+	 'downloader/request_method_count/GET': 2,
+	 'downloader/response_bytes': 14939,
+	 'downloader/response_count': 2,
+	 'downloader/response_status_count/200': 1,
+	 'downloader/response_status_count/302': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 4, 3, 556726),
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 7,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 2,
+	 'scheduler/dequeued/memory': 2,
+	 'scheduler/enqueued': 2,
+	 'scheduler/enqueued/memory': 2,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 4, 3, 222314)}
+2015-01-26 16:04:03+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:04:42+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:04:42+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:04:42+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'SPIDER_MODULES': ['douban.spiders'], 'LOG_FILE': 'test.log', 'BOT_NAME': 'douban'}
+2015-01-26 16:04:42+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:04:42+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:04:42+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:04:42+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:04:42+0800 [Test] INFO: Spider opened
+2015-01-26 16:04:42+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:04:42+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:04:42+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:04:42+0800 [Test] DEBUG: Redirecting (302) to <GET http://www.douban.com/group/explore> from <GET http://www.douban.com/group/>
+2015-01-26 16:04:42+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/explore> (referer: None)
+2015-01-26 16:04:42+0800 [Test] DEBUG: Fetch douban homepage page: http://www.douban.com/group/explore
+2015-01-26 16:04:42+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:04:42+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 472,
+	 'downloader/request_count': 2,
+	 'downloader/request_method_count/GET': 2,
+	 'downloader/response_bytes': 14956,
+	 'downloader/response_count': 2,
+	 'downloader/response_status_count/200': 1,
+	 'downloader/response_status_count/302': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 4, 42, 409048),
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 7,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 2,
+	 'scheduler/dequeued/memory': 2,
+	 'scheduler/enqueued': 2,
+	 'scheduler/enqueued/memory': 2,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 4, 42, 169568)}
+2015-01-26 16:04:42+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:47:21+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:47:21+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:47:21+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'FEED_URI': 'test.json', 'SPIDER_MODULES': ['douban.spiders'], 'BOT_NAME': 'douban', 'FEED_FORMAT': 'json', 'LOG_FILE': 'test.log'}
+2015-01-26 16:47:21+0800 [scrapy] INFO: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:47:21+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:47:21+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:47:21+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:47:21+0800 [Test] INFO: Spider opened
+2015-01-26 16:47:21+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:47:21+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:47:21+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:47:21+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/WHV/> (referer: None)
+2015-01-26 16:47:21+0800 [Test] DEBUG: Fetch group home page: http://www.douban.com/group/WHV/
+2015-01-26 16:47:21+0800 [Test] DEBUG: Scraped from <200 http://www.douban.com/group/WHV/>
+	{'RelativeGroups': [u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/AustraliaWHV/',
+	                    u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/workandtravel/',
+	                    u'http://www.douban.com/group/wwoofer/',
+	                    u'http://www.douban.com/group/skyfree/',
+	                    u'http://www.douban.com/group/24437/',
+	                    u'http://www.douban.com/group/datou/'],
+	 'groupName': u'Working Holiday',
+	 'groupURL': 'http://www.douban.com/group/WHV/',
+	 'totalNumber': u'68125'}
+2015-01-26 16:47:21+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:47:21+0800 [Test] INFO: Stored json feed (1 items) in: test.json
+2015-01-26 16:47:21+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 223,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 16103,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 47, 21, 948297),
+	 'item_scraped_count': 1,
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 8,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 47, 21, 377055)}
+2015-01-26 16:47:21+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:52:41+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:52:41+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:52:41+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'FEED_URI': 'test.json', 'SPIDER_MODULES': ['douban.spiders'], 'BOT_NAME': 'douban', 'FEED_FORMAT': 'json', 'LOG_FILE': 'test.log'}
+2015-01-26 16:52:41+0800 [scrapy] INFO: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:52:41+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:52:41+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:52:41+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:52:41+0800 [Test] INFO: Spider opened
+2015-01-26 16:52:41+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:52:41+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:52:41+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:52:42+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/WHV/> (referer: None)
+2015-01-26 16:52:42+0800 [Test] DEBUG: Fetch group home page: http://www.douban.com/group/WHV/
+2015-01-26 16:52:42+0800 [Test] ERROR: Spider error processing <GET http://www.douban.com/group/WHV/>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 382, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 490, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 577, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/kimice/PycharmProjects/scrapy/douban/douban/spiders/BasicGroupSpider.py", line 30, in parse
+	    item['groupName'] = hxs.select('//h1/text()').re("^\s+(.*)\s+$")[0].extract()
+	exceptions.AttributeError: 'unicode' object has no attribute 'extract'
+	
+2015-01-26 16:52:42+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:52:42+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 223,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 16138,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 52, 42, 90474),
+	 'log_count/DEBUG': 4,
+	 'log_count/ERROR': 1,
+	 'log_count/INFO': 7,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'spider_exceptions/AttributeError': 1,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 52, 41, 851140)}
+2015-01-26 16:52:42+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:53:16+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:53:16+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:53:16+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'FEED_URI': 'test.json', 'SPIDER_MODULES': ['douban.spiders'], 'BOT_NAME': 'douban', 'FEED_FORMAT': 'json', 'LOG_FILE': 'test.log'}
+2015-01-26 16:53:16+0800 [scrapy] INFO: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:53:16+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:53:16+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:53:16+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:53:16+0800 [Test] INFO: Spider opened
+2015-01-26 16:53:16+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:53:16+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:53:16+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:53:16+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/WHV/> (referer: None)
+2015-01-26 16:53:16+0800 [Test] DEBUG: Fetch group home page: http://www.douban.com/group/WHV/
+2015-01-26 16:53:16+0800 [Test] DEBUG: Scraped from <200 http://www.douban.com/group/WHV/>
+	{'RelativeGroups': [u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/AustraliaWHV/',
+	                    u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/workandtravel/',
+	                    u'http://www.douban.com/group/wwoofer/',
+	                    u'http://www.douban.com/group/skyfree/',
+	                    u'http://www.douban.com/group/24437/',
+	                    u'http://www.douban.com/group/datou/'],
+	 'groupName': u'Working Holiday',
+	 'groupURL': 'http://www.douban.com/group/WHV/',
+	 'totalNumber': u'68125'}
+2015-01-26 16:53:16+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:53:16+0800 [Test] INFO: Stored json feed (1 items) in: test.json
+2015-01-26 16:53:16+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 223,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 16105,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 53, 16, 488016),
+	 'item_scraped_count': 1,
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 8,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 53, 16, 268602)}
+2015-01-26 16:53:16+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:54:18+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:54:18+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:54:18+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'FEED_URI': 'test.json', 'SPIDER_MODULES': ['douban.spiders'], 'BOT_NAME': 'douban', 'FEED_FORMAT': 'json', 'LOG_FILE': 'test.log'}
+2015-01-26 16:54:18+0800 [scrapy] INFO: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:54:18+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:54:18+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:54:18+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:54:18+0800 [Test] INFO: Spider opened
+2015-01-26 16:54:18+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:54:18+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:54:18+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:54:19+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/WHV/> (referer: None)
+2015-01-26 16:54:19+0800 [Test] DEBUG: Fetch group home page: http://www.douban.com/group/WHV/
+2015-01-26 16:54:19+0800 [Test] ERROR: Spider error processing <GET http://www.douban.com/group/WHV/>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/base.py", line 1201, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 382, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 490, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/Twisted-14.0.2-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 577, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/kimice/PycharmProjects/scrapy/douban/douban/spiders/BasicGroupSpider.py", line 30, in parse
+	    item['groupName'] = hxs.select('//h1/text()').re("^\s+(.*)\s+$")[0].extract()
+	exceptions.AttributeError: 'unicode' object has no attribute 'extract'
+	
+2015-01-26 16:54:19+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:54:19+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 223,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 16101,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 54, 19, 459154),
+	 'log_count/DEBUG': 4,
+	 'log_count/ERROR': 1,
+	 'log_count/INFO': 7,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'spider_exceptions/AttributeError': 1,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 54, 18, 980187)}
+2015-01-26 16:54:19+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:55:15+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:55:15+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:55:15+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'FEED_URI': 'test.json', 'SPIDER_MODULES': ['douban.spiders'], 'BOT_NAME': 'douban', 'FEED_FORMAT': 'json', 'LOG_FILE': 'test.log'}
+2015-01-26 16:55:15+0800 [scrapy] INFO: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:55:15+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:55:15+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:55:15+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:55:15+0800 [Test] INFO: Spider opened
+2015-01-26 16:55:15+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:55:15+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:55:15+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:55:15+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/WHV/> (referer: None)
+2015-01-26 16:55:15+0800 [Test] DEBUG: Fetch group home page: http://www.douban.com/group/WHV/
+2015-01-26 16:55:15+0800 [Test] DEBUG: Scraped from <200 http://www.douban.com/group/WHV/>
+	{'RelativeGroups': [u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/AustraliaWHV/',
+	                    u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/workandtravel/',
+	                    u'http://www.douban.com/group/wwoofer/',
+	                    u'http://www.douban.com/group/skyfree/',
+	                    u'http://www.douban.com/group/24437/',
+	                    u'http://www.douban.com/group/datou/'],
+	 'groupName': u'Working Holiday/n',
+	 'groupURL': 'http://www.douban.com/group/WHV/',
+	 'totalNumber': u'68125'}
+2015-01-26 16:55:15+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:55:15+0800 [Test] INFO: Stored json feed (1 items) in: test.json
+2015-01-26 16:55:15+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 223,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 16168,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 55, 15, 914960),
+	 'item_scraped_count': 1,
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 8,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 55, 15, 256802)}
+2015-01-26 16:55:15+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:56:54+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:56:54+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:56:54+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'FEED_URI': 'test.json', 'SPIDER_MODULES': ['douban.spiders'], 'BOT_NAME': 'douban', 'FEED_FORMAT': 'json', 'LOG_FILE': 'test.log'}
+2015-01-26 16:56:54+0800 [scrapy] INFO: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:56:54+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:56:54+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:56:54+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:56:54+0800 [Test] INFO: Spider opened
+2015-01-26 16:56:54+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:56:54+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:56:54+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:56:54+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/WHV/> (referer: None)
+2015-01-26 16:56:54+0800 [Test] DEBUG: Fetch group home page: http://www.douban.com/group/WHV/
+2015-01-26 16:56:54+0800 [Test] DEBUG: Scraped from <200 http://www.douban.com/group/WHV/>
+	{'RelativeGroups': [u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/AustraliaWHV/',
+	                    u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/workandtravel/',
+	                    u'http://www.douban.com/group/wwoofer/',
+	                    u'http://www.douban.com/group/skyfree/',
+	                    u'http://www.douban.com/group/24437/',
+	                    u'http://www.douban.com/group/datou/'],
+	 'groupName': u'Working Holiday\n',
+	 'groupURL': 'http://www.douban.com/group/WHV/',
+	 'totalNumber': u'68125'}
+2015-01-26 16:56:54+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:56:54+0800 [Test] INFO: Stored json feed (1 items) in: test.json
+2015-01-26 16:56:54+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 223,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 16128,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 56, 54, 828289),
+	 'item_scraped_count': 1,
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 8,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 56, 54, 605959)}
+2015-01-26 16:56:54+0800 [Test] INFO: Spider closed (finished)
+2015-01-26 16:59:08+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: douban)
+2015-01-26 16:59:08+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-01-26 16:59:08+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'douban.spiders', 'FEED_URI': 'test.json', 'SPIDER_MODULES': ['douban.spiders'], 'BOT_NAME': 'douban', 'FEED_FORMAT': 'json', 'LOG_FILE': 'test.log'}
+2015-01-26 16:59:08+0800 [scrapy] INFO: Enabled extensions: FeedExporter, LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-01-26 16:59:08+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-01-26 16:59:08+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-01-26 16:59:08+0800 [scrapy] INFO: Enabled item pipelines: 
+2015-01-26 16:59:08+0800 [Test] INFO: Spider opened
+2015-01-26 16:59:08+0800 [Test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-01-26 16:59:08+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-01-26 16:59:08+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6080
+2015-01-26 16:59:08+0800 [Test] DEBUG: Crawled (200) <GET http://www.douban.com/group/WHV/> (referer: None)
+2015-01-26 16:59:08+0800 [Test] DEBUG: Fetch group home page: http://www.douban.com/group/WHV/
+2015-01-26 16:59:08+0800 [Test] DEBUG: Scraped from <200 http://www.douban.com/group/WHV/>
+	{'RelativeGroups': [u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/AustraliaWHV/',
+	                    u'http://www.douban.com/group/WWOOF/',
+	                    u'http://www.douban.com/group/helpx/',
+	                    u'http://www.douban.com/group/gapper/',
+	                    u'http://www.douban.com/group/workandtravel/',
+	                    u'http://www.douban.com/group/wwoofer/',
+	                    u'http://www.douban.com/group/skyfree/',
+	                    u'http://www.douban.com/group/24437/',
+	                    u'http://www.douban.com/group/datou/'],
+	 'groupName': u'Working Holiday',
+	 'groupURL': 'http://www.douban.com/group/WHV/',
+	 'totalNumber': u'68125'}
+2015-01-26 16:59:08+0800 [Test] INFO: Closing spider (finished)
+2015-01-26 16:59:08+0800 [Test] INFO: Stored json feed (1 items) in: test.json
+2015-01-26 16:59:08+0800 [Test] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 223,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 16096,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 1, 26, 8, 59, 8, 845203),
+	 'item_scraped_count': 1,
+	 'log_count/DEBUG': 5,
+	 'log_count/INFO': 8,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2015, 1, 26, 8, 59, 8, 148256)}
+2015-01-26 16:59:08+0800 [Test] INFO: Spider closed (finished)
