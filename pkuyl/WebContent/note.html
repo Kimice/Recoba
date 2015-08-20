@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+	<title>pkuYaoLi - 笔记</title>
+	<link href="style/main.css" rel="stylesheet" type="text/css">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mo_style.css">
+</head>
+<body>
+	<div class="main-container">
+		<nav class="main-nav">
+			<div id="logo" class="left"><a href="#">Yao Li</a></div>
+			<ul class="nav right center-text">
+				<li class="btn"><a href="index.html">主页</a></li>
+				<li class="btn active">笔记</li>
+				<li class="btn"><a href="video.html">视频</a></li>
+				<li class="btn"><a href="game.html">游戏</a></li>
+				<li class="btn"><a href="article.html">文章</a></li>	
+				<li class="btn"><a href="me.html">我</a></li>
+			</ul>
+		</nav>
+		<div class="content-container">
+			<header id="awards">
+				<h1 class="center-text">我的笔记</h1>
+				<h2 class="center-text">记录日常点滴</h2>
+			</header>
+			<div id="mo_timeline" class="content">
+				<div class="container-fluid">
+					<div class="time_line_wap left_timeline">		            
+						<div class="time_line_paragraph">
+							<div class="time_line_caption left">9天前</div>			            	
+							<div class="time_line_icon right"><i class="fa fa-gift"></i></div>			            	
+							<h1>MongoDB简明概览</h1>
+							<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							MongoDB以文档的形式存储数据，文档很类似于JSON的字段和值对。文档与编程语言中把键值对关联起来的结构很类似，比如dictionaries、hashes、maps以及associative arrays。正式的来说，MongoDB文档是BSON文档。BSON是有额外类别信息的JSON的二进制表现形式。在文档里，字段的值可以是BSON数据类型中的任意一种，包括其他的文档、数组以及文档数组。
+							<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							MongoDB的数据模式是一种灵活模式。关系型数据库要求你在插入数据之前必须先定义好一个表的模式结构，而MongoDB的集合则并不限制文档结构。这种灵活性让对象和数据库文档之间的映射变得很容易。即使数据记录之间有很大的变化，每个文档也可以很好的映射到各条不同的记录。当然在实际使用中，同一个集合中的文档往往都有一个比较类似的结构。
+							</p>
+							</div>
+					</div>
+					<div class="time_line_wap left_timeline">		            
+						<div class="time_line_paragraph">
+							<div class="time_line_caption left">2周以前</div>
+							<div class="time_line_icon right"><i class="fa fa-heart"></i></div>	
+							<h1>select和epoll异步编程</h1>
+							<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							linux提供select/poll，进程通过将一个或多个fd传递给select或poll系统调用，阻塞在select，这样select/poll可以帮我们侦测许多fd是否就绪。但是select/poll是顺序扫描fd是否就绪，而且支持的fd数量有限。linux还提供了一个epoll系统调用，epoll是基于事件驱动方式，而不是顺序扫描,当有fd就绪时，立即回调函数rollback。
+							epoll是基于事件的，而select模型是基于轮询的。这样如果有大量连接的话 epoll的优势显而易见。
+							<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							select函数要求三个必须序列作为参数和一个可选的以秒为单位的超时值。序列中是表示文件描述符的整数值，它们是我们要等待的连接。这三个序列是关于输入、输出和异常条件的。如果超时值没有给出的话，select将处于阻塞状态（也就是等待）直到有文件描述符准备动作。如果超时值给出了，那么select只阻塞给定的时间。如果超时值是0的话，那么将不阻塞。select返回的值是一个由三个序列组成的元组，它们分别代表相应参数的活动的子集。
+							<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							epoll与select原理类似，只不过，epoll作出了一些重大改进。select最不能忍受的是一个进程所打开的FD是有一定限制的，由FD_SETSIZE设置，默认值是2048。而epoll支持一个进程打开大数目的socket描述符。
+							select每次调用都会线性扫描全部的集合，导致效率呈现线性下降。但是epoll不存在这个问题，它只会对"活跃"的socket进行操作，这是因为在内核实现中epoll是根据每个fd上面的callback函数实现的。
+							</p>
+						</div>
+					</div>
+					<div class="time_line_wap left_timeline">		            
+						<div class="time_line_paragraph">
+							<div class="time_line_caption left">2014.12.21</div>
+							<div class="time_line_icon right"><i class="fa fa-chain"></i></div>	
+							<h1>关于ZMQ消息内核</h1>
+							<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							ZeroMQ位于(TCP/IP协议层次结构)会话层和应用层之间。ZeroMQ并不是一个对socket的封装，不能用它去实现已有的网络协议。它不同于传统消息中间件通过服务器缓存转发消息的方式，而是优化点对点的消息传输。ZeroMQ能缓存消息，但是是在发送端缓存。ZeroMQ里有水位设置的相关接口来控制缓存量。
+							在点对点的消息传输上ZeroMQ将通信的模式做了归纳，比如常见的订阅模式（一个消息发多个客户），分发模式（N个消息平均分给M个客户）等等。
+							利用异步传输数据，可以通过新增一个IO线程发送数据，该IO线程在一次链接之后，不会马上释放，复用点与点之间数据链接，可以很好地提高性能。后台线程使用无需锁的数据结构与应用线程通信，所以ZeroMQ应用程序不需要锁、信号量，或者其他等待状态。
+							</p>
+						</div>
+					</div>
+					<div class="time_line_wap left_timeline">		            
+						<div class="time_line_paragraph">
+							<div class="time_line_caption left">2014.12.16</div>
+							<div class="time_line_icon right"><i class="fa fa-tablet"></i></div>	
+							<h1>TCP协议的KeepAlive机制与HeartBeat心跳包</h1>
+							<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							HeartBeat像心跳一样每隔固定时间发一次，以此来告诉服务器，这个客户端还活着。事实上这是为了保持长连接，至于这个包的内容，是没有什么特别规定的，不过一般都是很小的包，或者只包含包头的一个空包。
+							<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							在TCP的机制里面，本身是存在有心跳包的机制的，也就是TCP的选项：SO_KEEPALIVE。系统默认是设置的2小时的心跳频率。但是它检查不到机器断电、网线拔出、防火墙这些断线。而且逻辑层处理断线可能也不是那么好处理。一般，如果只是用于保活还是可以的。
+							<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							心跳包一般来说都是在逻辑层发送空的echo包来实现的。下一个定时器，在一定时间间隔下发送一个空包给客户端，然后客户端反馈一个同样的空包回来，服务器如果在一定时间内收不到客户端发送过来的反馈包，那就只有认定说掉线了。
+							</p>
+						</div>
+					</div>
+					<div class="time_line_wap left_timeline">		            
+						<div class="time_line_paragraph">
+							<div class="time_line_caption left">2014.12.15</div>
+							<div class="time_line_icon right"><i class="fa fa-thumbs-o-up"></i></div>	
+							<h1>Tornado ioLoop分析</h1>
+							<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							IOLoop是基于epoll实现的底层网络I/O的核心调度模块，用于处理socket相关的连接、响应、异步读写等网络事件。每个Tornado进程都会初始化一个全局唯一的IOLoop实例，在IOLoop中通过静态方法instance()进行封装，获取IOLoop实例直接调用此方法即可。
+							<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							Tornado服务器启动时会创建监听socket，并将socket的file descriptor注册到IOLoop实例中，IOLoop添加对socket的IOLoop.READ事件监听并传入回调处理函数。当某个socket通过accept接受连接请求后调用注册的回调函数进行读写。
+							<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							epoll是Linux内核中实现的一种可扩展的I/O事件通知机制，是对POISX系统中select和poll的替代，具有更高的性能和扩展性，FreeBSD中类似的实现是kqueue。Tornado中基于Python C扩展实现的的epoll模块(或kqueue)对epoll(kqueue)的使用进行了封装，使得IOLoop对象可以通过相应的事件处理机制对I/O进行调度。
+							</p>
+						</div>
+					</div>
+					<div class="time_line_wap left_timeline">		            
+						<div class="time_line_paragraph">
+							<div class="time_line_caption left">2014.12.12</div>
+							<div class="time_line_icon right"><i class="fa fa-gavel"></i></div>	
+							<h1>Tornado框架简明概览</h1>
+							<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							Tornado是一个基于epoll的异步WEB框架，采用Python语言实现。Tornado的核心框架借鉴了web.py的实现，非常简洁优雅。此外，它还实现了一个同样简洁的模板框架。Tornado在自己的异步网络访问框架之上完整地实现了HTTP服务器，这也是它的核心框架的重要部分。
+							Tornado不仅仅是一个WEB框架，它还完整地实现了HTTP服务器和客户端，在此基础上提供WEB服务。它可以分为四层：最底层的EVENT层处理IO事件；TCP层实现了TCP服务器，负责数据传输；HTTP/HTTPS层基于HTTP协议实现了HTTP服务器和客户端；最上层为WEB框架，包含了处理器、模板、数据库连接、认证、本地化等等WEB框架需要具备的功能。</p>	            	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /.content-container -->		
+		<footer>
+			<p><a href="http://pkuyaoli.sinaapp.com/" title="yaoli" target="_blank">pkuyaoli</a></p>
+			<div class="social right">
+				<a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+				<a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+				<a href="http://plus.google.com/?hl=zh-CN"><i class="fa fa-google-plus"></i></a>
+				<a href="http://dribbble.com"><i class="fa fa-dribbble"></i></a>
+				<a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+				<a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+			</div>
+		</footer>
+	</div>	
+</body>
+</html>
