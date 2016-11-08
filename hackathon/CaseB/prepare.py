@@ -71,21 +71,21 @@ class PrepareWorker(object):
         cols = cols[-3:-5:-1] + cols[:-4] + cols[-2:]
         data = data[cols]
         data = pd.merge(data, self.rst_info, on='restaurant_id')
-        has_click = data.loc[(data['is_click'] == 1)]
-        no_click = data.loc[(data['is_click'] == 0)]
-        no_click = self.random_sample(no_click, int(len(has_click) * 2.42))
-        data = has_click.append(no_click)
+        # has_click = data.loc[(data['is_click'] == 1)]
+        # no_click = data.loc[(data['is_click'] == 0)]
+        # no_click = self.random_sample(no_click, int(len(has_click) * 2.42))
+        # data = has_click.append(no_click)
         data.drop(['list_id', 'is_raw_buy', 'order_id', 'eleme_device_id',
                    'food_name_list', 'category_list'],
                   axis=1, inplace=True)
 
         data = data.loc[(data['day_no'] <= 140)]
-        data['distance'] = data.apply(
-            lambda row: math.sqrt(
-                (row['x_x'] - row['x_y'])**2 + (row['y_x'] - row['y_y'])**2
-            ),
-            axis=1
-        )
+        # data['distance'] = data.apply(
+        #     lambda row: math.sqrt(
+        #         (row['x_x'] - row['x_y'])**2 + (row['y_x'] - row['y_y'])**2
+        #     ),
+        #     axis=1
+        # )
 
         data.drop(['x_x', 'x_y', 'y_x', 'y_y'],
                   axis=1, inplace=True)
@@ -116,10 +116,10 @@ class PrepareWorker(object):
         cols = cols[-3:-5:-1] + cols[:-4] + cols[-2:]
         data = data[cols]
         data = pd.merge(data, self.rst_info, on='restaurant_id')
-        has_buy = data.loc[(data['is_buy'] == 1)]
-        no_buy = data.loc[(data['is_buy'] == 0)]
-        no_buy = self.random_sample(no_buy, int(len(has_buy) * 9.9))
-        data = has_buy.append(no_buy)
+        # has_buy = data.loc[(data['is_buy'] == 1)]
+        # no_buy = data.loc[(data['is_buy'] == 0)]
+        # no_buy = self.random_sample(no_buy, int(len(has_buy) * 9.9))
+        # data = has_buy.append(no_buy)
         data.drop(['list_id', 'is_raw_buy', 'order_id', 'eleme_device_id',
                    'food_name_list', 'category_list'],
                   axis=1, inplace=True)
@@ -162,12 +162,12 @@ class PrepareWorker(object):
 
         log_ids = list(data['log_id'])
 
-        data['distance'] = data.apply(
-            lambda row: math.sqrt(
-                (row['x_x'] - row['x_y'])**2 + (row['y_x'] - row['y_y'])**2
-            ),
-            axis=1
-        )
+        # data['distance'] = data.apply(
+        #     lambda row: math.sqrt(
+        #         (row['x_x'] - row['x_y'])**2 + (row['y_x'] - row['y_y'])**2
+        #     ),
+        #     axis=1
+        # )
 
         data.drop(['list_id', 'eleme_device_id', 'x_x', 'x_y',
                    'food_name_list', 'category_list', 'y_x', 'y_y'],

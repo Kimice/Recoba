@@ -33,22 +33,22 @@ def run():
 
     p_click = PredictWorker(x_click, y_click, x_pred).fit_and_predict()
 
-    b_data = PrepareWorker(file_path).prepare_buy_train_data()
-    x_buy = np.array(b_data.iloc[:, 2:])
-    y_buy = np.array(b_data.iloc[:, 0])
+    # b_data = PrepareWorker(file_path).prepare_buy_train_data()
+    # x_buy = np.array(b_data.iloc[:, 2:])
+    # y_buy = np.array(b_data.iloc[:, 0])
     # x_pred = np.insert(x_pred, 0, p_click, axis=1)
-    p_buy = PredictWorker(x_buy, y_buy, x_pred).fit_and_predict()
+    # p_buy = PredictWorker(x_buy, y_buy, x_pred).fit_and_predict()
 
-    with open('/output/result.txt', 'w') as f:
-        for i in xrange(len(log_ids)):
-            # if int(p_click[i]) or int(p_buy[i]):
-            f.write('\t'.join(
-                (
-                    str(log_ids[i]),
-                    str(int(p_click[i])),
-                    str(int(p_buy[i]))
-                )
-            ) + '\n')
+    # with open('/output/result.txt', 'w') as f:
+    #     for i in xrange(len(log_ids)):
+    #         # if int(p_click[i]) or int(p_buy[i]):
+    #         f.write('\t'.join(
+    #             (
+    #                 str(log_ids[i]),
+    #                 str(int(p_click[i])),
+    #                 str(int(p_buy[i]))
+    #             )
+    #         ) + '\n')
     return 0
 
 

@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import time
+import xgboost
 
 from sklearn import cross_validation
 from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import GradientBoostingClassifier
 
 
 class PredictWorker(object):
@@ -15,7 +17,9 @@ class PredictWorker(object):
         self.p_x = p_x
         self.scaler = StandardScaler()
         n_iter = max(10**6 / len(self.x_train), 1)
-        self.classifier = SGDClassifier(loss='log', n_iter=n_iter, penalty='l2')
+        # self.classifier = SGDClassifier(loss='log', n_iter=n_iter, penalty='l2')
+        # self.classifier = GradientBoostingClassifier()
+        self.classifier = xgboost.XGBClassifier()
 
     def fit_and_predict(self):
         print "****** train start ******"
