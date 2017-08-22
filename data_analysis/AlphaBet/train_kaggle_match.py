@@ -173,7 +173,7 @@ def del_data(bet_company):
     print data_set.info()
     bet_name = bet_company[0][:-1]
     model = train(data_set, bet_name)
-    model.save('models/{}'.format(bet_name))
+    model.save('models/{}_match'.format(bet_name))
     # print model.predict(np.array([[[2.10, 3.20, 3.20], ]]))
 
 
